@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:name="cn.com.niuniu.yj.demo.fragment.GreenDaoFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    app:layoutManager="LinearLayoutManager"
+    tools:context="cn.com.niuniu.yj.demo.fragment.GreenDaoFragment"
+    android:orientation="vertical">
+
+    <com.qmuiteam.qmui.alpha.QMUIAlphaTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/fmt_greendao_title"
+        android:gravity="center_horizontal" />
+
+    <!-- ID-->
+    <com.qmuiteam.qmui.alpha.QMUIAlphaLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+        <com.qmuiteam.qmui.alpha.QMUIAlphaTextView
+            android:id="@+id/tv_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_id"
+            android:gravity="center_horizontal" />
+
+        <EditText
+            android:id="@+id/et_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:hint="@string/str_hint_id"/>
+    </com.qmuiteam.qmui.alpha.QMUIAlphaLinearLayout>
+
+    <!-- 姓名-->
+    <com.qmuiteam.qmui.alpha.QMUIAlphaLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+        <com.qmuiteam.qmui.alpha.QMUIAlphaTextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_name"
+            android:gravity="center_horizontal" />
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:hint="@string/str_hint_name"/>
+    </com.qmuiteam.qmui.alpha.QMUIAlphaLinearLayout>
+
+    <!-- 年龄 -->
+    <com.qmuiteam.qmui.alpha.QMUIAlphaLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+        <com.qmuiteam.qmui.alpha.QMUIAlphaTextView
+            android:id="@+id/tv_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_age"
+            android:gravity="center_horizontal" />
+
+        <EditText
+            android:id="@+id/et_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:hint="@string/str_hint_age"/>
+    </com.qmuiteam.qmui.alpha.QMUIAlphaLinearLayout>
+
+    <!-- 描述 -->
+    <com.qmuiteam.qmui.alpha.QMUIAlphaLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+        <com.qmuiteam.qmui.alpha.QMUIAlphaTextView
+            android:id="@+id/tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_desc"
+            android:gravity="center_horizontal" />
+
+        <EditText
+            android:id="@+id/et_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:hint="@string/str_hint_desc"/>
+    </com.qmuiteam.qmui.alpha.QMUIAlphaLinearLayout>
+
+     <!-- 电话 -->
+      <com.qmuiteam.qmui.alpha.QMUIAlphaLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            >
+            <com.qmuiteam.qmui.alpha.QMUIAlphaTextView
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_phone"
+                android:gravity="center_horizontal" />
+
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:hint="@string/str_hint_phone"/>
+       </com.qmuiteam.qmui.alpha.QMUIAlphaLinearLayout>
+
+    <!-- 按钮 -->
+    <com.qmuiteam.qmui.alpha.QMUIAlphaLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+            android:id="@+id/btn_query_all"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            app:qmui_backgroundColor="@color/btn_filled_blue_bg_normal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/str_query_all"/>
+
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+            android:id="@+id/btn_query_id"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            app:qmui_backgroundColor="@color/btn_filled_blue_bg_normal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/str_query_id"/>
+
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+            android:id="@+id/btn_insert"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            app:qmui_backgroundColor="@color/btn_filled_blue_bg_normal"
+            android:layout_marginRight="10dp"
+            android:text="@string/str_insert"/>
+
+    </com.qmuiteam.qmui.alpha.QMUIAlphaLinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/text_margin_1"
+            android:text="@string/str_id"
+            android:textColor="@color/qmui_config_color_red"
+            android:textAppearance="?attr/textAppearanceListItem" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/text_margin_1"
+            android:text="@string/str_name"
+            android:textColor="@color/qmui_config_color_red"
+            android:textAppearance="?attr/textAppearanceListItem" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/text_margin_1"
+            android:text="@string/str_age"
+            android:textColor="@color/qmui_config_color_red"
+            android:textAppearance="?attr/textAppearanceListItem" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/text_margin_1"
+            android:text="@string/str_desc"
+            android:textColor="@color/qmui_config_color_red"
+            android:textAppearance="?attr/textAppearanceListItem" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/text_margin_1"
+            android:text="@string/str_phone"
+            android:textColor="@color/qmui_config_color_red"
+            android:textAppearance="?attr/textAppearanceListItem" />
+
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:layout_margin="@dimen/text_margin_1"
+            android:text="@string/str_delete"
+            android:visibility="invisible"
+            android:gravity="center"/>
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:layout_margin="@dimen/text_margin_1"
+            android:text="@string/str_update"
+            android:visibility="invisible"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list"
+        android:name="cn.com.niuniu.yj.demo.fragment.GreenDaoFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/fragment_greendao"/>
+
+
+</LinearLayout>

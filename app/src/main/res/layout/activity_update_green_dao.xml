@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    tools:context="cn.com.niuniu.yj.demo.activity.UpdateGreenDaoActivity">
+
+    <TextView
+        android:id="@+id/tv_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_id"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="80dp" />
+
+    <EditText
+        android:id="@+id/et_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/str_hint_id"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_id"
+        app:layout_constraintLeft_toRightOf="@+id/tv_id"
+        android:layout_marginLeft="58dp" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_name"
+        tools:layout_editor_absoluteX="16dp"
+        android:layout_marginTop="41dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_id" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/str_hint_name"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_name"
+        app:layout_constraintLeft_toRightOf="@+id/tv_name"
+        android:layout_marginLeft="58dp" />
+
+    <TextView
+        android:id="@+id/tv_age"
+        android:layout_width="58dp"
+        android:layout_height="24dp"
+        android:text="@string/str_age"
+        tools:layout_editor_absoluteX="16dp"
+        android:layout_marginTop="46dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+    <EditText
+        android:id="@+id/et_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/str_hint_age"
+        app:layout_constraintLeft_toRightOf="@+id/tv_age"
+        android:layout_marginLeft="58dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_age" />
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_desc"
+        tools:layout_editor_absoluteX="16dp"
+        android:layout_marginTop="37dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_age" />
+
+    <EditText
+        android:id="@+id/et_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/str_hint_desc"
+        app:layout_constraintLeft_toRightOf="@+id/tv_desc"
+        android:layout_marginLeft="58dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_desc" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="338dp"
+        android:layout_height="43dp"
+        android:text="@string/str_update"
+        tools:layout_editor_absoluteX="8dp"
+        android:layout_marginTop="37dp"
+        app:layout_constraintTop_toBottomOf="@+id/ed_phone" />
+
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_phone"
+        app:layout_constraintRight_toLeftOf="@+id/ed_phone"
+        android:layout_marginRight="58dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/ed_phone" />
+
+    <EditText
+        android:id="@+id/ed_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/str_hint_phone"
+        tools:layout_editor_absoluteX="102dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintTop_toBottomOf="@+id/et_desc" />
+</android.support.constraint.ConstraintLayout>

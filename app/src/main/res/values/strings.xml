@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">NiuNiu(牛牛)</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_about">AboutActivity</string>
+
+    <string name="str_id">ID</string>
+    <string name="str_name">姓名</string>
+    <string name="str_age">年龄</string>
+    <string name="str_desc">描述</string>
+    <string name="str_phone">电话</string>
+
+    <string name="str_hint_id">请输入ID</string>
+    <string name="str_hint_name">请输入姓名</string>
+    <string name="str_hint_age">请输入年龄</string>
+    <string name="str_hint_desc">请输入描述</string>
+    <string name="str_hint_phone">请输入电话</string>
+
+    <string name="str_query_id">查询(ID)</string>
+    <string name="str_query_all">查询(all)</string>
+    <string name="str_insert">添加</string>
+    <string name="str_delete">删除</string>
+    <string name="str_update">修改</string>
+
+
+    <!-- 关于界面 -->
+    <string name="about_tv_content">哪有什么春风十里，只不过是前面有人为你负重而行。\n一衰烟雨任平生，无风无语也无晴。\n
+    界面布局用的是ConstraintLayout，这个布局是狗屎。</string>
+    <string name="about_tv_name">小牛牛</string>
+    <string name="about_tv_tel">18512345678</string>
+    <string name="about_tv_email">1113977232@qq.com</string>
+    <string name="about_tv_web">www.baidu.com</string>
+    <string name="about_click_name">叫我搞甚</string>
+    <string name="about_click_date">黄道吉日啊！</string>
+    <string name="about_click_tel">Call ME</string>
+    <string name="about_click_email">邮我</string>
+    <string name="about_title">关于界面</string>
+
+    <!-- 主界面-->
+    <string name="nav_other">其他</string>
+    <string name="nav_about">关于</string>
+    <string name="nav_greendao">GreenDao3.0实例</string>
+
+    <!-- 主Fragment -->
+    <string name="fmt_main_content">本demo纯属个人积累开发使用，如有雷同，我会告你。【我是主fragment】</string>
+
+    <!-- GreenDao Fragment -->
+    <string name="fmt_greendao_title">该界面演示GreenDao</string>
+    <string name="error_add_db1">User对象为空，无法添加</string>
+    <string name="error_add_db2">主key不能为空，无法添加</string>
+    <string name="error_data_parse">数据转换类型异常</string>
+    <string name="error_query_db">没有任何检索条件，无法检索</string>
+    <string name="query_no_data">没有数据</string>
+    <string name="error_delete_db">没有任何删除条件，无法删除</string>
+
+    <!-- 数据库修改界面 -->
+    <string name="update_greendao_title">数据库修改界面</string>
+    <string name="error_update_db">主key不能为空，无法修改</string>
+
+</resources>
